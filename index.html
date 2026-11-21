@@ -54,10 +54,7 @@
         #splash-screen {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             display: flex; justify-content: center; align-items: center;
-            background: linear-gradient(-45deg, #090009,
-        #300020,
-        #800040,
-        #FF007F);
+            background: linear-gradient(-45deg, #000205, #001124, #002a52, #001124);
             background-size: 400% 400%;
             animation: splashGradient 10s ease infinite;
             z-index: 100;
@@ -91,7 +88,7 @@
         .page { width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; flex-shrink: 0; }
 
         .container {
-            width: 90%; max-width: 650px; height: 90vh;
+            width: 85%; max-width: 420px; height: 85vh;
             background: var(--glass-bg); backdrop-filter: blur(25px);
             border: 1px solid var(--glass-border); border-radius: 20px;
             padding: 20px; text-align: center; display: flex; flex-direction: column;
@@ -271,7 +268,7 @@
         /* ESTILO DO ALERTA DE COPYRIGHT */
         .copy-alert {
             position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-            background: rgba(0, 5, 15, 0.95); border: 2px solid var(--neon-pink);
+            background: rgba(0, 5, 15, 0.95); border: 2px solid var(--neon-blue);
             padding: 25px 40px; border-radius: 15px; z-index: 10000; text-align: center;
             backdrop-filter: blur(15px); box-shadow: 0 0 30px rgba(0, 72, 255, 0.4);
             pointer-events: none; opacity: 0; transition: opacity 0.3s ease;
@@ -302,7 +299,7 @@
                 <img src="https://xatimg.com/image/4SvF2RLtlHTa.gif" class="user-photo">
                 <div style="display: flex; flex-direction: column; align-items: flex-start;">
                     <h1 class="main-title">GALERIA</h1>
-                    <span style="font-size: 0.65rem; color: #fff; letter-spacing: 2px; font-weight: bold; margin-top: -3px; text-shadow: 0 0 5px #fff, 0 0 10px #fff;">ID: 77</span>
+                    <span style="font-size: 0.6rem; color: #fff; letter-spacing: 2px; font-weight: bold; margin-top: -3px; text-shadow: 0 0 5px #fff, 0 0 10px #fff;">ID: 1777777</span>
                 </div>
             </div>
             
@@ -328,7 +325,7 @@
         <div class="container">
             <h2 style="font-size: 0.9rem;">GALERIA DE GIFS</h2>
             <div class="content-scroll">
-                <div class="marquee-box"><div class="marquee-text">Modelos - CHICAS</div></div>
+                <div class="marquee-box"><div class="marquee-text">Modelos - GIRLS</div></div>
                 <div class="gif-grid">
                     <div class="gif-card" onclick="openZoom(this)"><div class="gif-img-box"><img src="https://i.postimg.cc/XByvgVCD/54.gif"></div><span>After - 1</span></div>
                     <div class="gif-card" onclick="openZoom(this)"><div class="gif-img-box"><img src="https://i.postimg.cc/zHRfkJg7/42.gif"></div><span>After - 2</span></div>
@@ -361,7 +358,7 @@
                     <div class="gif-card" onclick="openZoom(this)"><div class="gif-img-box"><img src="https://i.postimg.cc/4yfhDVGr/16.gif"></div><span>After - 4 </span></div>
                     <div class="gif-card" onclick="openZoom(this)"><div class="gif-img-box"><img src="https://i.postimg.cc/Pp7xZLP2/19.gif"></div><span>After - 5 </span></div>
                 </div>
-                <div class="marquee-box"><div class="marquee-text">Modelos - CHICOS  </div></div>
+                <div class="marquee-box"><div class="marquee-text">Modelos - BOYS  </div></div>
                 <div class="gif-grid">
                     <div class="gif-card" onclick="openZoom(this)"><div class="gif-img-box"><img src="https://i.imgur.com/kv1EWDW.gif"></div><span>Bluff - 1</span></div>
                     <div class="gif-card" onclick="openZoom(this)"><div class="gif-img-box"><img src="https://i.imgur.com/FIulKIF.gif"></div><span>Bluff - 2</span></div>
@@ -399,7 +396,7 @@
                     <div class="gif-card" onclick="openZoom(this)"><div class="gif-img-box"><img src="https://i.postimg.cc/4yfhDVGr/16.gif"></div><span>After - 4 </span></div>
                     <div class="gif-card" onclick="openZoom(this)"><div class="gif-img-box"><img src="https://i.postimg.cc/Pp7xZLP2/19.gif"></div><span>After - 5 </span></div>
                 </div>
-                 <div class="marquee-box"><div class="marquee-text">Modelos - EXCLUSIVOS  </div></div>
+                 <div class="marquee-box"><div class="marquee-text">Modelos - EXCLUSIVOS </div></div>
                 <div class="gif-grid">
                     <div class="gif-card" onclick="openZoom(this)"><div class="gif-img-box"><img src="https://i.imgur.com/kv1EWDW.gif"></div><span>space - 1</span></div>
                     <div class="gif-card" onclick="openZoom(this)"><div class="gif-img-box"><img src="https://i.imgur.com/FIulKIF.gif"></div><span>Space - 2</span></div>
@@ -446,11 +443,80 @@
                     <div class="gif-card" onclick="openZoom(this)"><div class="gif-img-box"><img src="https://i.postimg.cc/Pp7xZLP2/19.gif"></div><span>After - 5 </span></div>
                 </div>
             </div>
-            <button class="btn-back" onclick="navigate(0)">VOLVER</button>
+            <button class="btn-back" onclick="navigate(0)">VOLTAR</button>
         </div>
     </div>
 
+    <div class="page">
+        <div class="container">
+            <h2 style="font-size: 0.9rem;">GALERIA DE PCBACK GIF</h2>
+            <div class="content-scroll">
+                <div class="pcback-list">
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/SFnk7A6.gif"></div><span>Pcback - 1</span></div>
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/KKY2zqU.gif"></div><span>Pcback - 2</span></div>
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/fmhynyY.gif"></div><span>Pcback - 3</span></div>
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/28xDTg0.gif"></div><span>Pcback - 4</span></div>
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/9R35WMu.gif"></div><span>Pcback - 5</span></div>
+                </div>
+            </div>
+            <button class="btn-back" onclick="navigate(0)">VOLTAR</button>
+        </div>
+    </div>
 
+    <div class="page">
+        <div class="container">
+            <h2 style="font-size: 0.9rem;">GALERIA DE PSTYLE GIF</h2>
+            <div class="content-scroll">
+                <div class="pcback-list">
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/rUIzfWU.gif"></div><span>Pstyle - 1</span></div>
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/dGfJDfh.gif"></div><span>Pstyle - 2</span></div>
+                     <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/4P6kTS6.gif"></div><span>Pstyle - 3</span></div>
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/ZXBA6F1.gif"></div><span>Pstyle - 4</span></div>
+                </div>
+            </div>
+            <button class="btn-back" onclick="navigate(0)">VOLTAR</button>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="container">
+            <h2 style="font-size: 0.9rem;">GALERIA DE FUNDOS</h2>
+            <div class="content-scroll">
+                <div class="pcback-list">
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/eJtGG3D.png"></div><span>Fundo - 1</span></div>
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/Q8XwtQZ.png"></div><span>Fundo - 2</span></div>
+                     <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/6phSrhR.png"></div><span>Fundo - 1</span></div>
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/yeQZf5S.png"></div><span>Fundo - 2</span></div>
+                </div>
+            </div>
+            <button class="btn-back" onclick="navigate(0)">VOLTAR</button>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="container">
+            <h2 style="font-size: 0.9rem;">GALERIA DE PSTYLE ESTÁTICO</h2>
+            <div class="content-scroll">
+                <div class="pcback-list">
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/zlcL7Dh.png"></div><span>Estático - 1</span></div>
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/Ii4pk4g.png"></div><span>Estático - 2</span></div>
+                </div>
+            </div>
+            <button class="btn-back" onclick="navigate(0)">VOLTAR</button>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="container">
+            <h2 style="font-size: 0.9rem;">GALERIA DE PCBACK ESTÁTICO</h2>
+            <div class="content-scroll">
+                <div class="pcback-list">
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/OyX4Jwt.png"></div><span>PB Estático - 1</span></div>
+                    <div class="pcback-card" onclick="openZoom(this)"><div class="pcback-img-box"><img src="https://i.imgur.com/tcGR4ey.png"></div><span>PB Estático - 2</span></div>
+                </div>
+            </div>
+            <button class="btn-back" onclick="navigate(0)">VOLTAR</button>
+        </div>
     </div>
 </div>
 
@@ -467,11 +533,9 @@
 
     let currentTrack = 0; const audio = new Audio(); let volState = 2;
     function loadTrack(i) { currentTrack = i; audio.src = playlist[i].url; document.getElementById('current-song').innerText = playlist[i].name; }
-function enterGallery() {
-    document.body.classList.add('loaded');
-    loadTrack(0);
-    audio.play().catch(()=>{});
-    
+    function enterGallery() { document.body.classList.add('loaded');navigate(1);  loadTrack(0);audio.play().catch(()=>{});
+}
+    audio.onended = function() { nextSong(); };
     function nextSong() { currentTrack = (currentTrack + 1) % playlist.length; loadTrack(currentTrack); audio.play(); }
     function prevSong() { currentTrack = (currentTrack - 1 + playlist.length) % playlist.length; loadTrack(currentTrack); audio.play(); }
     function playPause() { const b = document.getElementById('play-btn'); if (audio.paused) { audio.play(); b.innerText = "Pause"; } else { audio.pause(); b.innerText = "Play"; } }
