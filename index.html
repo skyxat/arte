@@ -467,7 +467,10 @@
 
     let currentTrack = 0; const audio = new Audio(); let volState = 2;
     function loadTrack(i) { currentTrack = i; audio.src = playlist[i].url; document.getElementById('current-song').innerText = playlist[i].name; }
-    function enterGallery() { document.body.classList.add('loaded'); loadTrack(0); audio.play().catch(()=>{}); }
+    function enterGallery() { document.body.classList.add('loaded');
+    navigate(1);
+    loadTrack(0);
+    audio.play().catch(()=>{});
     audio.onended = function() { nextSong(); };
     function nextSong() { currentTrack = (currentTrack + 1) % playlist.length; loadTrack(currentTrack); audio.play(); }
     function prevSong() { currentTrack = (currentTrack - 1 + playlist.length) % playlist.length; loadTrack(currentTrack); audio.play(); }
